@@ -63,6 +63,8 @@
                     android:textColor="@color/grey_lighter"
                     android:background="@color/darkgrey_text_color" />
 
+                <!-- found this code on StackOverflow -->
+
                 <RatingBar
                     android:id="@+id/ratingBar"
                     android:theme="@style/RatingBar"
@@ -103,6 +105,8 @@
                     android:paddingTop="10dp"
                     android:orientation="vertical"
                     android:background="@color/grey_light">
+
+                    <!-- figured out how to get icons on StackOverflow -->
 
                     <ImageView
                         android:id="@+id/phone_icon"
