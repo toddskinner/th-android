@@ -6,4 +6,5 @@
     <color name="grey_light">#EEEEEE</color>
     <color name="grey_lighter">#FAFAFA</color>
     <color name="darkgrey_text_color">#424242</color>
+    <color name="white">#FFFFFF</color>
 </resources>
