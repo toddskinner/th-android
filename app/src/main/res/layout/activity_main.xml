@@ -1,52 +1,181 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     tools:context="com.example.android.th_android.MainActivity">
 
-    <ImageView
-        android:id="@+id/eggplant_salad_image_view"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:scaleType="centerCrop"
-        android:src="@drawable/eggplant_salad" />
-
     <LinearLayout
+        android:id="@+id/activity_main"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
+        android:layout_height="match_parent"
         android:orientation="vertical">
 
-        <TextView
-            android:id="@+id/info_text_view"
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:text="Tamarind Hall"
-            android:layout_weight="1" />
 
-        <TextView
-            android:id="@+id/oneline_text_view"
+        <ImageView
+            android:id="@+id/eggplant_salad_image_view"
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:text="Thai Restaurant and Bar"
-            android:layout_weight="1" />
+            android:layout_weight="1"
+            android:scaleType="centerCrop"
+            android:src="@drawable/eggplant_salad" />
 
-        <TextView
-            android:id="@+id/review_text_view"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:text="4 stars"
-            android:layout_weight="1" />
+            android:layout_weight="4"
+            android:orientation="vertical"
+            android:background="@color/grey_light">
+
+            <TextView
+                android:id="@+id/info_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="16dp"
+                android:paddingTop="16dp"
+                android:text="Tamarind Hall"
+                android:textSize="36sp"
+                android:textStyle="bold"
+                android:textColor="@color/darkgrey_text_color"
+                android:background="@color/grey_light" />
+
+            <TextView
+                android:id="@+id/oneline_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="16dp"
+                android:textSize="20sp"
+                android:textStyle="italic"
+                android:text="Thai Restaurant and Bar"
+                android:textColor="@color/darkgrey_text_color"
+                android:background="@color/grey_light" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/grey_light">
+
+                <TextView
+                    android:id="@+id/score_text_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="18dp"
+                    android:text="4.9"
+                    android:background="@color/grey_light" />
+
+                <RatingBar
+                    android:id="@+id/rating"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="2dp"
+                    android:paddingLeft="8dp"
+                    android:numStars="5"
+                    android:stepSize="0.1"
+                    style="?android:attr/ratingBarStyleSmall"
+                    android:isIndicator="true"
+                    android:background="@color/grey_light"/>
+
+                <TextView
+                    android:id="@+id/num_reviews_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="16dp"
+                    android:text="311 reviews"
+                    android:background="@color/grey_light" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="24dp"
+                android:orientation="horizontal"
+                android:background="@color/grey_light">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@color/grey_light">
+
+                    <ImageView
+                        android:id="@+id/phone_icon"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:src="@drawable/phone_icon" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="6dp"
+                        android:text="Call"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:textAllCaps="true"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@color/grey_light">
+
+                    <ImageView
+                        android:id="@+id/star_icon"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:src="@drawable/star_icon2" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="6dp"
+                        android:text="Save"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:textAllCaps="true"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@color/grey_light">
+
+                    <ImageView
+                        android:id="@+id/globe_icon"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:src="@drawable/globe_icon" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="6dp"
+                        android:text="Website"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:textAllCaps="true"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
 
         <TextView
             android:id="@+id/address_text_view"
             android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:text="1268 Grant Ave"
-            android:layout_weight="1" />
+            android:layout_height="wrap_content"
+            android:background="@color/grey_light"
+            android:text="1268 Grant Ave" />
     </LinearLayout>
-</LinearLayout>
+</ScrollView>
