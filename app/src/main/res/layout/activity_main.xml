@@ -169,13 +169,66 @@
 
             </LinearLayout>
 
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="20dp"
+                android:orientation="horizontal"
+                android:background="@color/grey_light">
+
+                <ImageView
+                    android:id="@+id/pin_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="12dp"
+                    android:gravity="center_vertical"
+                    android:src="@drawable/pin_icon" />
+
+                <TextView
+                    android:id="@+id/address_text_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="4dp"
+                    android:background="@color/grey_light"
+                    android:textStyle="bold"
+                    android:gravity="center_vertical"
+                    android:textSize="16sp"
+                    android:textAllCaps="false"
+                    android:text="1268 Grant Ave, San Francisco, CA 94133" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="4dp"
+                android:orientation="horizontal"
+                android:background="@color/grey_light">
+
+                <ImageView
+                    android:id="@+id/clock_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="12dp"
+                    android:gravity="center_vertical"
+                    android:src="@drawable/clock_icon" />
+
+                <TextView
+                    android:id="@+id/hours_text_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="4dp"
+                    android:background="@color/grey_light"
+                    android:textStyle="bold"
+                    android:gravity="center_vertical"
+                    android:textSize="16sp"
+                    android:textAllCaps="false"
+                    android:text="Sun-Thurs  11:30am - 11:00pm
+                                  Fri-Sat  11:30am - 1:00am" />
+
+            </LinearLayout>
+
         </LinearLayout>
 
-        <TextView
-            android:id="@+id/address_text_view"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@color/grey_light"
-            android:text="1268 Grant Ave" />
     </LinearLayout>
 </ScrollView>
